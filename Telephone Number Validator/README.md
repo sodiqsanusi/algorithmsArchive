@@ -16,7 +16,7 @@ For this challenge you will be presented with a string such as `800-692-7753` or
 # Solution (JavaScript):
 ```javascript
 function telephoneCheck(str) {
-  let reg = /^((1\s?)?(\d{3}|\(\d{3}\)))[\-|\s]?\d{3}[\-|\s]?\d{4}$/g;
+  let reg = /^((1\s?)?(\d{3}|\(\d{3}\)))[\-\s]?\d{3}[\-\s]?\d{4}$/g;
   return reg.test(str);
 }
 ```
